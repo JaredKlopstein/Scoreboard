@@ -1,32 +1,33 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-       <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
-                
-
-    </head>
-    <body>
-        <div class="container">
-            <div class="home card">
-                <h3 class="title">HOME</h3>
-                <p id="score-home" class="score"></p>
-                <div class="score-buttons">
-                    <button class="score-button" onclick="addHome(1)">+1</button>
-                    <button class="score-button" onclick="addHome(2)">+2</button>
-                    <button class="score-button" onclick="addHome(3)">+3</button>
-                </div>
-            </div>
-            <div class="guest card">
-                <h3 class="title">GUEST</h3>
-                <p id="score-guest" class="score"></p>
-                <div class="score-buttons">
-                    <button class="score-button" onclick="addGuest(1)">+1</button>
-                    <button class="score-button" onclick="addGuest(2)">+2</button>
-                    <button class="score-button" onclick="addGuest(3)">+3</button>
-                </div>
-            </div>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="home card">
+        <h3 class="title">HOME</h3>
+        <p id="score-home" class="score"></p>
+        <div class="score-buttons">
+          <button class="score-button" onclick="addHome(1)">+1</button>
+          <button class="score-button" onclick="addHome(2)">+2</button>
+          <button class="score-button" onclick="addHome(3)">+3</button>
         </div>
-        <button id="new-game" onclick="newGame()">New Game</button>
-        <script src="index.js"></script> 
-    </body>
+      </div>
+      <div class="guest card">
+        <h3 class="title">AWAY</h3>
+        <p id="score-guest" class="score"></p>
+        <div class="score-buttons">
+          <button class="score-button" onclick="addGuest(1)">+1</button>
+          <button class="score-button" onclick="addGuest(2)">+2</button>
+          <button class="score-button" onclick="addGuest(3)">+3</button>
+        </div>
+      </div>
+    </div>
+    <button id="new-game" onclick="newGame()">New Game</button>
+    <script src="index.js"></script>
+  </body>
 </html>
